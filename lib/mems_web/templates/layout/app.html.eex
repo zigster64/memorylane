@@ -7,35 +7,38 @@
     <title>Memory Lane Stuff</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
-
-    <!-- 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    -->
   </head>
   <body>
     <section
-      x-data="{showMenu: false}"
-      class="items-center justify-between flex bg-gray-800 bg-opacity-90 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12"
+      x-data="{menuActive: false}"
+      class="flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-gray-800 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12"
     >
-      <div class="text-2xl text-white font-semibold inline-flex items-center">
+      <div class="text-base md:text-2xl text-white font-semibold inline-flex items-center">
         <img
           src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
-          class="w-16 mr-4"
+          class="w-8 sm:w-16 mr-4"
           alt="logo-img">
         <span>Magic Memories</span>
       </div>
-
-      <nav class="hidden mt-3 md:flex md:flex-row text-white">
-        <a class="ml-5 px-2 py-1" href="/what">What</a>
-        <a class="ml-5 px-2 py-1" href="/how">How</a>
-        <a class="ml-5 px-2 py-1" href="/where">Where</a>
-        <a class="ml-5 px-2 py-1" href="/testimonials">Testimonials</a>
-        <a class="rounded font-semibold bg-gray-100 text-gray-800 ml-5 px-2 py-1" href="/contact">Contact</a>
+  
+      <nav 
+        class="absolute lg:relative top-16 left-0 lg:top-0 z-20 mt-3 lg:flex flex-col lg:flex-row lg:space-x-6 w-full lg:w-auto bg-white shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0 text-gray-900 lg:text-white"
+        :class="{'flex': menuActive, 'hidden': !menuActive}"
+        @click.away="menuActive=false"
+        >
+        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/what">What</a>
+        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/how">How</a>
+        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/where">Where</a>
+        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/testimonials">Testimonials</a>
+        <a 
+          class="rounded font-semibold ring-4 ring-gray-50 bg-gray-100 text-gray-800 ml-5 px-2 py-1 hover:bg-gray-200 hover:text-blue-800" 
+          href="/contact">
+          Contact
+        </a>
       </nav>
 
-      <div class="md:hidden tham tham-e-squeeze tham-w-6">
-        <div class="tham-box" @click="showMenu = !showMenu">
+      <div class="lg:hidden tham tham-e-squeeze tham-w-6" :class="{'tham-active': menuActive}">
+        <div class="tham-box" @click="menuActive = !menuActive">
           <div class="tham-inner bg-white" />
         </div>
       </div>

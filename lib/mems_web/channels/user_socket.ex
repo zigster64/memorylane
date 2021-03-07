@@ -3,6 +3,7 @@ defmodule MemsWeb.UserSocket do
 
   ## Channels
   # channel "room:*", MemsWeb.RoomChannel
+  channel "chat:*", MemsWeb.ChatChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After

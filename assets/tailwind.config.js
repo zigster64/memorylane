@@ -13,6 +13,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-      require('tailwind-hamburgers')
+      require('tailwind-hamburgers'),
   ],
 }
