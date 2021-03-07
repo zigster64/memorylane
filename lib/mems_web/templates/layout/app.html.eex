@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Memory Lane Stuff</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="items-center justify-between flex bg-gray-800 bg-opacity-90 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12">
+    <div class="text-2xl text-white font-semibold inline-flex items-center">
+        <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" class="w-16 mr-4"
+            alt="logo-img">
+        <span>Magic Memories</span>
+    </div>
+    <ul class="flex text-white">
+      <li class="ml-5 px-2 py-1"><a href="/what">What</a></li>
+      <li class="ml-5 px-2 py-1"><a href="/how">How</a></li>
+      <li class="ml-5 px-2 py-1"><a href="/where">Where</a></li>
+      <li class="ml-5 px-2 py-1"><a href="/testimonials">Testimonials</a></li>
+      <li class="ml-5 px-2 py-1 rounded font-semibold bg-gray-100 text-gray-800"><a href="/contact">Contact</a></li>
+    </ul>
+    </section>
+
+    <section>
+    <%= @inner_content %>
+    </section>
+
+    <section>
+      <a href="/dashboard">Footer Stuff</a>
+      <p>Locale: <%= @locale %></p>
+    </section>
+  </body>
+</html>
