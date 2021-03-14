@@ -1,0 +1,18 @@
+<section class="flex flex-row">
+  <div class="w-8/12 rounded-lg p-8">
+    <p>Each of us have a memory of where we were born, where we grew up, a favourite song/movie or childhood holiday.</p>
+
+    <p>Reminiscence is a process where we recall the past, previous events, people and significant moments in our lives. We connect the present with the past with an event that brings to mind a similar, former event. Reminiscing is good for our emotional well-being and reduces isolation, loneliness and negative feelings. When we ‘reminisce’ we recall memories and recapture the emotions that went with them, sharing our experience and knowledge with others.</p>
+
+    <p>All of us engage in this reflective process from time to time. Reminiscence is seen as a normal and vital part of growing older. It becomes more important as we age, allowing us to get in touch with things and times that were important to us and memories that make us happy. </p>
+
+    <p>As we age, we tend to remember things that happened to us between the ages of 10 and 30 years, with events from the late teens and early twenties remaining most prominent. This is called “the reminiscence bump.’ Those memories remain vivid in our minds, even when more recent ones are forgotten.</p>
+
+    <p> Recalling positive memories makes everyone feel happy and good memories can become a powerful way to boost your mood. Reminiscing can turn a ‘bad’ day into a ‘good’ day – or even a good week. </p>
+
+    <p> Reminiscing stimulates the part of the brain that is targeted by drugs in pain relief. So an effective session of reminiscing can be a valid alternative to medication and other preventative strategies.</p>
+  </div>
+  <div class="w-3/12 aspect-w-3 aspect-h-4">
+    <img class="object-cover shadow-lg rounded-lg" src="images/mem3.jpg">
+  </div>
+</section>

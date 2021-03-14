@@ -9,7 +9,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :mems, MemsWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "steve.local"],
   secret_key_base: "muNL5MRnZxL52ePzZR16cmqcgMgMPkU/glAtDHEgD1mmMxeGbzaXQjgzfJ25AP0P",
   render_errors: [view: MemsWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Mems.PubSub,

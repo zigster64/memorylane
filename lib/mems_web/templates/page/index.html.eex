@@ -1,3 +1,11 @@
-<section class="phx-hero">
-  Index Stuff
+<section class="flex flex-row">
+  <div class="w-8/12 rounded-lg p-8">
+    <p>Memory Lane is a mobile reminiscing service for aged persons.</p>
+    <p>It uses modern technology to reconnect people with their past.</p>
+    <p>This is done in an immersive environment where sight and sound is enhanced to maximise the memories being experienced.</p>
+    <p>Reminiscing within aged care promotes good mental health, feelings of belonging, maintaining personal identity and reconnection with family and community.</p>
+    <p>We come to you at a time of your choosing and provide that precious opportunity to reflect, enjoy and rediscover memories from the past.</p>
+  </div>
+  <div class="w-3/12 aspect-w-3 aspect-h-4">
+    <img class="shadow-lg rounded-lg" src="images/mem6.jpg">
 </section>

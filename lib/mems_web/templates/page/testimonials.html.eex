@@ -1,3 +1,28 @@
-<section class="phx-hero">
-  Testimonials Stuff
+<section class="flex flex-row">
+  <div class="w-8/12 rounded-lg p-8">
+    “Steve has a unique ability to relate to people from all age groups and his empathy for aged people is obvious to all” 
+    <div class="ml-20 mb-5">
+		– Residential Aged Care CEO
+    </div>
+
+“Whenever I see Steve he shows me places in the world I could only ever dream about or imagine.” 
+    <div class="ml-20 mb-5">
+		– Residential Aged Care resident
+    </div>
+
+“Steve’s commitment to accurate and detailed documentation relevant to the Aged Care Standards is objective and professional.”
+    <div class="ml-20 mb-5">
+		- Clinical Nurse Manager
+    </div>
+
+“Steve’s encyclopaedic knowledge of popular music, movies and culture ensures that he is able to connect with a persons childhood memories”
+    <div class="ml-20 mb-5">
+		- Lifestyle and Leisure Team Member
+    </div>
+
+  </div>
+  <div class="flex flex-col w-3/12 aspect-none">
+    <img class="w-full aspect-none rounded-lg" src="images/mem4.jpg">
+    <img class="w-full aspect-none rounded-lg mt-8" src="images/mem7.jpg">
+  </div>
 </section>

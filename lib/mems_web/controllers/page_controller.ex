@@ -5,16 +5,20 @@ defmodule MemsWeb.PageController do
     render(conn, "index.html")
   end
 
-  def what(conn, _params) do
-    render(conn, "what.html")
+  def reminisce(conn, _params) do
+    render(conn, "reminisce.html")
   end
 
   def how(conn, params) do
     render(conn, "how.html")
   end
 
-  def where(conn, params) do
-    render(conn, "where.html")
+  def what(conn, _params) do
+    render(conn, "what.html")
+  end
+
+  def who(conn, params) do
+    render(conn, "who.html")
   end
 
   def testimonials(conn, params) do

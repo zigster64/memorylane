@@ -1,3 +1,24 @@
-<section class="phx-hero">
-  How Stuff
+<section class="flex flex-row">
+  <div class="w-8/12 rounded-lg p-8">
+    <p>There are many ways in which reminiscing can be conducted in an aged care environment.</p>
+
+    <p>The University of Western Sydney have been conducting studies and trials in recent years to establish what best works and delivers maximum benefit to the resident/family.</p>
+
+    <p>They have found that immersive technology produces the best results.</p>
+
+    <p>By immersive we mean, where sight and sound are maximised and presented in such a way that the mind is stimulated and captivated.</p>
+
+    <p>In other words, the size and clarity of what is seen and the quality of what is heard.</p>
+
+    <p>Memory Lane uses a high definition tablet and hi/fi speakers/headphones to deliver the high quality picture and sound to a resident in their bed or sitting room via tablet, existing TV or communal area.</p>
+
+    <p>We are able to provide an experience that minimises distractions and allows their senses to live again.</p>
+
+    <p>Through their studies, UWS also discovered that multimedia reminiscing with family members has greatest impact through the familial bond being able to better stimulate their mind, sharing in the experience and form repeat memories.</p>
+
+  </div>
+  <div class="w-3/12 aspect-w-3 aspect-h-4">
+    <img class="object-cover shadow-lg rounded-lg" src="images/mem5.jpg">
+    <img class="object-cover shadow-lg rounded-lg mt-8" src="images/mem2.jpg">
+  </div>
 </section>

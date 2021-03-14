@@ -4,39 +4,39 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Memory Lane Stuff</title>
+    <title>Memory Lane Reminiscing</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
-  <body>
+  <body class="bg-gray-800 text-gray-300 text-lg">
+    <section class="mx-auto mt-5 ml-20 flex">
+    <a href="/"><img
+      src="images/memlogo.png"
+      class="justify-center mx-auto w-8/12"
+      alt="logo-img">
+    </a>
+    </section>
     <section
       x-data="{menuActive: false}"
-      class="flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-gray-800 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12"
+      class="flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-gray-800 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12 rounded-lg border-2"
     >
-      <div class="text-base md:text-2xl text-white font-semibold inline-flex items-center">
-        <img
-          src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
-          class="w-8 sm:w-16 mr-4"
-          alt="logo-img">
-        <span>Magic Memories</span>
-      </div>
-  
+      <div class="text-base md:text-2xl text-white font-semibold inline-flex items-center rounded-lg w-2/12"></div>
       <nav 
-        class="absolute lg:relative top-16 left-0 lg:top-0 z-20 mt-3 lg:flex flex-col lg:flex-row lg:space-x-6 w-full lg:w-auto bg-white shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0 text-gray-900 lg:text-white"
+        class="text-xl absolute bg-white lg:relative top-300 right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 w-6/12 lg:w-auto shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
         :class="{'flex': menuActive, 'hidden': !menuActive}"
         @click.away="menuActive=false"
         >
-        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/what">What</a>
-        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/how">How</a>
-        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/where">Where</a>
-        <a class="ml-5 px-2 py-1 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-blue-200" href="/testimonials">Testimonials</a>
+        <%= nav_link("reminisce", "Reminisce", @view_template) %>
+        <%= nav_link("how", "How", @view_template) %>
+        <%= nav_link("what", "What", @view_template) %>
+        <%= nav_link("who", "Who", @view_template) %>
+        <%= nav_link("testimonials", "Testimonials", @view_template) %>
         <a 
-          class="rounded font-semibold ring-4 ring-gray-50 bg-gray-100 text-gray-800 ml-5 px-2 py-1 hover:bg-gray-200 hover:text-blue-800" 
+          class="rounded font-semibold ring-4 ring-bg-gray-50 bg-gray-100 text-gray-800 ml-5 px-2 py-1 hover:bg-gray-200 hover:text-blue-800" 
           href="/contact">
           Contact
         </a>
       </nav>
-
       <div class="lg:hidden tham tham-e-squeeze tham-w-6" :class="{'tham-active': menuActive}">
         <div class="tham-box" @click="menuActive = !menuActive">
           <div class="tham-inner bg-white" />

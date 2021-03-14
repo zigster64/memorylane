@@ -18,9 +18,10 @@ defmodule MemsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/what", PageController, :what
+    get "/reminisce", PageController, :reminisce
     get "/how", PageController, :how
-    get "/where", PageController, :where
+    get "/what", PageController, :what
+    get "/who", PageController, :who
     get "/testimonials", PageController, :testimonials
     get "/contact", PageController, :contact
   end

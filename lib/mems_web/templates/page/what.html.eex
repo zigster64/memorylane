@@ -1,3 +1,23 @@
-<section class="phx-hero">
-  What Stuff
+<section class="flex flex-row">
+  <div class="w-8/12 rounded-lg p-8">
+With Memory Lane, residents can travel by technology to where they have grown up or visited, listen to music or watch a favourite film and talk to family and friends around the world via video or voice calls. We can show;
+<p>
+<ul class="list-disc ml-5 md:ml-10 lg:ml-20">
+  <li>Where you were born and have lived</li>
+  <li>Where you have holidayed</li>
+  <li>Show your favourite movie / TV shows</li>
+  <li>Listen to your favourite songs / music</li>
+  <li>Look at key life / historical events</li>
+  <li>Look at pictures and personal photos</li>
+  <li>Virtual street views</li>
+  <li>Desktop world travel</li>
+  <li>Video calling of friends and relatives</li>
+  <li>Local and international phone calls</li>
+  <li>Home movies and display photo albums</li>
+</ul>
+We go to the resident, they may be reclining in bed, relaxing in their favourite chair, enjoying the space of a communal area or engaging with others in a small group. Our equipment can be used standalone, connected to a resident's TV or large screen in a communal area.
+  </div>
+  <div class="flex flex-col w-3/12 aspect-none">
+    <img class="w-full aspect-none rounded-lg mt-8" src="images/mem2.jpg">
+  </div>
 </section>
