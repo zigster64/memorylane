@@ -49,7 +49,7 @@ defmodule MemsWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug :introspect
+  # plug :introspect
   plug MemsWeb.Router
 
   def introspect(conn, _opts) do
