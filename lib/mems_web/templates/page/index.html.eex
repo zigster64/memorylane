@@ -1,4 +1,4 @@
-<section class="flex flex-row ml-5 lg:ml-10">
+<section class="flex flex-col lg:flex-row m-5 lg:ml-10">
   <div class="lg:w-8/12 rounded-lg p-8">
     <p class="mb-2">Memory Lane is a mobile reminiscing service for aged persons.</p>
 
@@ -15,5 +15,9 @@
   </div>
   <div class="hidden lg:block w-3/12">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem6.jpg">
+  </div>
+  <div class="lg:hidden flex w-full justify-between flex-row text-yellow-200">
+    <%= link("", to: "/reminisce") %>
+    <%= link("Reminisce >", to: "/reminisce") %>
   </div>
 </section>

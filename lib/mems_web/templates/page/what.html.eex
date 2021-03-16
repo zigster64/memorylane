@@ -1,4 +1,4 @@
-<section class="flex flex-row ml-5 lg:ml-10">
+<section class="flex lg:flex-row flex-col m-5 lg:ml-10">
   <div class="lg:w-8/12 rounded-lg p-8">
     
     <p class="mb-2">With Memory Lane, residents can travel by technology to where they have grown up or visited, listen to music or watch a favourite film and talk to family and friends around the world via video or voice calls. We can show;</p>
@@ -25,5 +25,9 @@
   </div>
   <div class="hidden lg:block lg:w-3/12">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem2.jpg">
+  </div>
+  <div class="lg:hidden w-full justify-between flex flex-row text-yellow-200">
+    <%= link("< How", to: "/how") %>
+    <%= link("Who >", to: "/who") %>
   </div>
 </section>

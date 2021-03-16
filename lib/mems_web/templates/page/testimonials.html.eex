@@ -1,4 +1,4 @@
-<section class="flex flex-row ml-5 lg:ml-10">
+<section class="flex lg:flex-row flex-col m-5 lg:ml-10">
   <div class="lg:w-8/12 rounded-lg p-8">
     “Steve has a unique ability to relate to people from all age groups and his empathy for aged people is obvious to all” 
     <div class="ml-5 lg:ml-20 mb-5">
@@ -28,5 +28,9 @@
   <div class="w-3/12 hidden lg:block">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem4.jpg">
     <img class="object-cover shadow-lg rounded-lg mt-8" src="images/mem7.jpg">
+  </div>
+  <div class="lg:hidden w-full justify-between flex flex-row text-yellow-200">
+    <%= link("< Who", to: "/who") %>
+    <%= link("Contact >", to: "/contact") %>
   </div>
 </section>

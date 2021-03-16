@@ -1,4 +1,4 @@
-<section class="flex w-full">
+<section class="flex w-full flex-col">
   <div class="w-full place-self-center shadow rounded-lg p-8">
     <div class="text-center">
 For more information, make a booking or arrange for a free demonstration
