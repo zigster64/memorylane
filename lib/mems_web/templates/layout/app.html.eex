@@ -20,9 +20,11 @@
       x-data="{menuActive: false}"
       class="flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-gray-800 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12 rounded-lg border-2"
     >
-      <div class="text-base md:text-2xl text-white font-semibold inline-flex items-center rounded-lg w-2/12"></div>
+    <div class="lg:hidden text-3xl text-yellow-300 text-left" :class="{'hidden': menuActive}">
+        <%= name(@view_template) %>
+      </div>
       <nav 
-        class="text-xl relative bg-white w-4/12 right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 w-6/12 lg:w-auto shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
+        class="text-2xl relative right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
         :class="{'flex': menuActive, 'hidden': !menuActive}"
         @click.away="menuActive=false"
         >
@@ -32,7 +34,7 @@
         <%= nav_link("who", "Who", @view_template) %>
         <%= nav_link("testimonials", "Testimonials", @view_template) %>
         <a 
-          class="rounded font-semibold ring-4 ring-bg-gray-50 bg-gray-100 text-gray-800 ml-5 px-2 py-1 hover:bg-gray-200 hover:text-blue-800" 
+          class="rounded font-semibold ring-4 ring-bg-gray-50 bg-gray-800 text-gray-100 ml-5 px-2 py-1 hover:bg-gray-700 hover:text-blue-200" 
           href="/contact">
           Contact
         </a>

@@ -1,8 +1,10 @@
-<section class="flex flex-row ml-10">
-  <div class="w-8/12 rounded-lg p-8">
+<section class="flex flex-row ml-5 lg:ml-10">
+  <div class="lg:w-8/12 rounded-lg lg:p-8">
     <p class="mb-2">There are many ways in which reminiscing can be conducted in an aged care environment.</p>
 
     <p class="mb-2">The University of Western Sydney have been conducting studies and trials in recent years to establish what best works and delivers maximum benefit to the resident/family.</p>
+
+    <img class="lg:hidden object-cover shadow-lg rounded-lg m-8" src="images/mem5.jpg">
 
     <p class="mb-2">They have found that immersive technology produces the best results.</p>
 
@@ -12,12 +14,14 @@
 
     <p class="mb-2">Memory Lane uses a high definition tablet and hi/fi speakers/headphones to deliver the high quality picture and sound to a resident in their bed or sitting room via tablet, existing TV or communal area.</p>
 
+    <img class="lg:hidden object-cover shadow-lg rounded-lg m-8" src="images/mem2.jpg">
+
     <p class="mb-2">We are able to provide an experience that minimises distractions and allows their senses to live again.</p>
 
     <p class="mb-2">Through their studies, UWS also discovered that multimedia reminiscing with family members has greatest impact through the familial bond being able to better stimulate their mind, sharing in the experience and form repeat memories.</p>
 
   </div>
-  <div class="w-3/12">
+  <div class="w-3/12 hidden lg:block">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem5.jpg">
     <img class="object-cover shadow-lg rounded-lg mt-8" src="images/mem2.jpg">
   </div>

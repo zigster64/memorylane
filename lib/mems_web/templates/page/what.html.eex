@@ -1,9 +1,9 @@
-<section class="flex flex-row ml-10">
-  <div class="w-8/12 rounded-lg p-8">
+<section class="flex flex-row ml-5 lg:ml-10">
+  <div class="lg:w-8/12 rounded-lg p-8">
     
     <p class="mb-2">With Memory Lane, residents can travel by technology to where they have grown up or visited, listen to music or watch a favourite film and talk to family and friends around the world via video or voice calls. We can show;</p>
 
-<p>
+    <img class="lg:hidden m-8 object-cover shadow-lg rounded-lg" src="images/mem2.jpg">
 
 <ul class="list-disc ml-5 md:ml-10 lg:ml-2/12 mb-5">
   <li>Where you were born and have lived</li>
@@ -19,10 +19,11 @@
   <li>Home movies and display photo albums</li>
 </ul>
 
+
 <p class="mb-2">We go to the resident, they may be reclining in bed, relaxing in their favourite chair, enjoying the space of a communal area or engaging with others in a small group. Our equipment can be used standalone, connected to a resident's TV or large screen in a communal area.</p>
 
   </div>
-  <div class="w-3/12">
+  <div class="hidden lg:block lg:w-3/12">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem2.jpg">
   </div>
 </section>

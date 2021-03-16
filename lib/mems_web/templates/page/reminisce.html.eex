@@ -1,8 +1,12 @@
-<section class="flex flex-row ml-10">
-  <div class="w-8/12 rounded-lg p-8">
+<section class="flex flex-row ml-5 lg:ml-10">
+  <div class="lg:w-8/12 rounded-lg p-8">
     <p class="mb-2">Each of us have a memory of where we were born, where we grew up, a favourite song/movie or childhood holiday.</p>
 
-    <p class="mb-2">Reminiscence is a process where we recall the past, previous events, people and significant moments in our lives. We connect the present with the past with an event that brings to mind a similar, former event. Reminiscing is good for our emotional well-being and reduces isolation, loneliness and negative feelings. When we ‘reminisce’ we recall memories and recapture the emotions that went with them, sharing our experience and knowledge with others.</p>
+    <p class="mb-2">Reminiscence is a process where we recall the past, previous events, people and significant moments in our lives. We connect the present with the past with an event that brings to mind a similar, former event.</p>
+
+    <img class="lg:hidden m-8 object-cover shadow-lg rounded-lg" src="images/mem3.jpg">
+
+    <p class="mb-2">Reminiscing is good for our emotional well-being and reduces isolation, loneliness and negative feelings. When we ‘reminisce’ we recall memories and recapture the emotions that went with them, sharing our experience and knowledge with others.</p>
 
     <p class="mb-2">All of us engage in this reflective process from time to time. Reminiscence is seen as a normal and vital part of growing older. It becomes more important as we age, allowing us to get in touch with things and times that were important to us and memories that make us happy. </p>
 
@@ -13,7 +17,7 @@
     <p class="mb-2"> Reminiscing stimulates the part of the brain that is targeted by drugs in pain relief. So an effective session of reminiscing can be a valid alternative to medication and other preventative strategies.</p>
 
   </div>
-  <div class="w-3/12">
+  <div class="w-3/12 hidden lg:block">
     <img class="object-cover shadow-lg rounded-lg" src="images/mem3.jpg">
   </div>
 </section>
