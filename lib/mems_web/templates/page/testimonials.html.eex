@@ -1,5 +1,5 @@
 <section class="flex flex-row">
-  <div class="w-8/12 rounded-lg p-8">
+  <div class="w-8/12 rounded-lg ml-20 p-8">
     “Steve has a unique ability to relate to people from all age groups and his empathy for aged people is obvious to all” 
     <div class="ml-20 mb-5">
 		– Residential Aged Care CEO
@@ -21,8 +21,8 @@
     </div>
 
   </div>
-  <div class="flex flex-col w-3/12 aspect-none">
-    <img class="w-full aspect-none rounded-lg" src="images/mem4.jpg">
-    <img class="w-full aspect-none rounded-lg mt-8" src="images/mem7.jpg">
+  <div class="w-3/12 aspect-w-3 aspect-h-4">
+    <img class="object-cover shadow-lg rounded-lg" src="images/mem4.jpg">
+    <img class="object-cover shadow-lg rounded-lg mt-8" src="images/mem7.jpg">
   </div>
 </section>

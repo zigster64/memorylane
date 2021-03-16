@@ -22,7 +22,7 @@
     >
       <div class="text-base md:text-2xl text-white font-semibold inline-flex items-center rounded-lg w-2/12"></div>
       <nav 
-        class="text-xl absolute bg-white lg:relative top-300 right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 w-6/12 lg:w-auto shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
+        class="text-xl relative bg-white w-4/12 right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 w-6/12 lg:w-auto shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
         :class="{'flex': menuActive, 'hidden': !menuActive}"
         @click.away="menuActive=false"
         >
@@ -45,10 +45,5 @@
     </section>
 
     <section><%= @inner_content %></section>
-
-    <section>
-      <a href="/dashboard">Footer Stuff</a>
-      <p>Locale: <%= @locale %></p>
-    </section>
   </body>
 </html>
