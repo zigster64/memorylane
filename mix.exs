@@ -20,7 +20,7 @@ defmodule Mems.MixProject do
   def application do
     [
       mod: {Mems.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :bamboo, :bamboo_smtp]
     ]
   end
 
@@ -41,7 +41,13 @@ defmodule Mems.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:amnesia, "~> 0.2.8"},
+      {:httpoison, "~> 1.8"},
+      {:poison, "~> 4.0"},
+      {:bamboo, "~> 2.0.1"},
+      {:bamboo_smtp, "~> 4.0"},
+      {:hackney, "~> 1.17"}
     ]
   end
 

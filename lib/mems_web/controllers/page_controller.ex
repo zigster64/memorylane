@@ -9,7 +9,7 @@ defmodule MemsWeb.PageController do
     render(conn, "reminisce.html")
   end
 
-  def how(conn, params) do
+  def how(conn, _params) do
     render(conn, "how.html")
   end
 
@@ -17,15 +17,15 @@ defmodule MemsWeb.PageController do
     render(conn, "what.html")
   end
 
-  def who(conn, params) do
+  def who(conn, _params) do
     render(conn, "who.html")
   end
 
-  def testimonials(conn, params) do
+  def testimonials(conn, _params) do
     render(conn, "testimonials.html")
   end
 
-  def contact(conn, params) do
+  def contact(conn, _params) do
     render(conn, "contact.html")
   end
 end
