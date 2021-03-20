@@ -14,6 +14,6 @@ defmodule Mems.Email do
 
   def send_test do
     test_email()
-    |> Mailer.deliver_now!()
+    |> Mems.Mailer.deliver_later!()
   end
 end

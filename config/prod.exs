@@ -10,7 +10,7 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :mems, MemsWeb.Endpoint,
-  url: [host: "steve.local", port: 8080],
+  url: [host: {:system, "MLR_HOST"}, port: {:system, "MLR_PORT"}],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production

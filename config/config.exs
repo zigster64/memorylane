@@ -9,7 +9,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :mems, MemsWeb.Endpoint,
-  url: [host: "steve.local"],
+  url: [host: {:system, "MLR_HOST"}],
   secret_key_base: "muNL5MRnZxL52ePzZR16cmqcgMgMPkU/glAtDHEgD1mmMxeGbzaXQjgzfJ25AP0P",
   render_errors: [view: MemsWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Mems.PubSub,
@@ -38,6 +38,9 @@ config :mems, Mems.Mailer,
   no_mx_lookups: false, # can be `true`
   auth: :if_available # can be `:always`. If your smtp relay requires a
 
+if Mix.env() == :test do
+  config :mems, Mems.Mailer, adapter: Mems.SMTPTestAdapter
+end
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
