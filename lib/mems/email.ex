@@ -5,10 +5,10 @@ defmodule Mems.Email do
   def test_email do
     new_email(
       to: "steve@raffmail.net",
-      from: "steve@raffmail.net",
-      subject: "test from mems",
-      html_body: "<strong>Hello World</strong>",
-      text_body: "Hello World Text"
+      from: "mlr@raffmail.net",
+      subject: "You have a new Memory Lane enquiry",
+      html_body: "<strong>Hello World</strong> in HTML",
+      text_body: "Hello World in Text"
     )
   end
 

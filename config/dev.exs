@@ -11,8 +11,10 @@ config :mems, MemsWeb.Endpoint,
   https: [
     port: 8081,
     cipher_suite: :strong,
-    keyfile: "priv/cert/selfsigned_key.pem",
-    certfile: "priv/cert/selfsigned.pem"
+    #keyfile: "priv/cert/selfsigned_key.pem",
+    #certfile: "priv/cert/selfsigned.pem",
+    keyfile: "priv/keys/localhost.key",
+    certfile: "priv/keys/localhost.cert"
   ],
   debug_errors: true,
   code_reloader: true,

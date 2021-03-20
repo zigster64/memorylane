@@ -24,7 +24,7 @@
         <%= name(@view_template) %>
       </div>
       <nav 
-        class="text-2xl relative right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 shadow-md rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
+        class="text-2xl relative right-10 lg:top-0 z-20 mt-1 lg:flex flex-col lg:flex-row lg:space-x-6 rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent p-6 lg:p-0"
         :class="{'flex': menuActive, 'hidden': !menuActive}"
         @click.away="menuActive=false"
         >

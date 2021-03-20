@@ -33,7 +33,7 @@ config :mems, Mems.Mailer,
   password: {:system, "MLR_SMTP_PASSWORD"},
   tls: :if_available, # can be `:always` or `:never`
   allowed_tls_versions: {:system, "MLR_ALLOWED_TLS_VERSIONS"}, #:tlsv1, :tlsv1.1, :tlsv1.2], # or {:system, "ALLOWED_TLS_VERSIONS"} w/ comma seprated values (e.g. "tlsv1.1,tlsv1.2")
-  ssl: false, # can be `true`
+  ssl: true, # can be `true`
   retries: 1,
   no_mx_lookups: false, # can be `true`
   auth: :if_available # can be `:always`. If your smtp relay requires a
