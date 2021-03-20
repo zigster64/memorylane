@@ -26,13 +26,13 @@ config :phoenix, :json_library, Jason
 # Email config
 config :mems, Mems.Mailer,
   adapter: Bamboo.SMTPAdapter,
-  server: {:system, "SMTP_SERVER"},
-  hostname: {:system, "SMTP_HOSTNAME"},
+  server: {:system, "MLR_SMTP_SERVER"},
+  hostname: {:system, "MLR_SMTP_HOSTNAME"},
   port: 1025,
-  username: {:system, "SMTP_USERNAME"}, # or {:system, "SMTP_USERNAME"}
-  password: {:system, "SMTP_PASSWORD"}, # or {:system, "SMTP_PASSWORD"}
+  username: {:system, "MLR_SMTP_USERNAME"}, # or {:system, "SMTP_USERNAME"}
+  password: {:system, "MLR_SMTP_PASSWORD"}, # or {:system, "SMTP_PASSWORD"}
   tls: :if_available, # can be `:always` or `:never`
-  allowed_tls_versions: {:system, "ALLOWED_TLS_VERSIONS"}, #:tlsv1, :tlsv1.1, :tlsv1.2], # or {:system, "ALLOWED_TLS_VERSIONS"} w/ comma seprated values (e.g. "tlsv1.1,tlsv1.2")
+  allowed_tls_versions: {:system, "MLR_ALLOWED_TLS_VERSIONS"}, #:tlsv1, :tlsv1.1, :tlsv1.2], # or {:system, "ALLOWED_TLS_VERSIONS"} w/ comma seprated values (e.g. "tlsv1.1,tlsv1.2")
   ssl: false, # can be `true`
   retries: 1,
   no_mx_lookups: false, # can be `true`
