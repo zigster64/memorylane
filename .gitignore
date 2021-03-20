@@ -36,3 +36,4 @@ config/releases.exs
 
 config/mems.env
 config/mems.csh
+mems.tgz
