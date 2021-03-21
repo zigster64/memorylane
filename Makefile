@@ -1,4 +1,5 @@
-all: start
+all: 
+	@cat Makefile
 
 local:
 	mix phx.server

@@ -12,9 +12,10 @@ use Mix.Config
 config :mems, MemsWeb.Endpoint,
   url: [host: {:system, "MLR_HOST"}],
   http: [
-    :inet6,
+    #:inet6,
+    ip: {0,0,0,0},
     port: {:system, "MLR_HTTP_PORT"},
-    compress: true,
+    #compress: true,
   ],
   cache_static_manifest: "priv/static/cache_manifest.json"
   
