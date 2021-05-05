@@ -37,6 +37,8 @@ defmodule Mems.MixProject do
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_dashboard, "~> 0.4"},
+      {:phoenix_live_view, "~> 0.15.4"},
+      {:floki, ">= 0.27.0", only: :test},
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
@@ -47,7 +49,9 @@ defmodule Mems.MixProject do
       {:poison, "~> 4.0"},
       {:bamboo, "~> 2.0.1"},
       {:bamboo_smtp, "~> 4.0"},
-      {:hackney, "~> 1.17"}
+      {:hackney, "~> 1.17"},
+      {:ecto, "~> 3.6"},
+      {:postgrex, "~> 0.15.8"}
     ]
   end
 

@@ -8,14 +8,14 @@ use Mix.Config
 # with webpack to recompile .js and .css sources.
 config :mems, MemsWeb.Endpoint,
   http: [port: 8080],
-  https: [
-    port: 8081,
-    cipher_suite: :strong,
+  #https: [
+    #port: 8081,
+    #cipher_suite: :strong,
     #keyfile: "priv/cert/selfsigned_key.pem",
     #certfile: "priv/cert/selfsigned.pem",
-    keyfile: "priv/keys/localhost.key",
-    certfile: "priv/keys/localhost.cert"
-  ],
+    #keyfile: "priv/keys/localhost.key",
+    #certfile: "priv/keys/localhost.cert"
+    #],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
